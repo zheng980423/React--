@@ -1,27 +1,25 @@
 import React from "react";
-import logo from "./logo.svg";
+import { Cell, Footer } from "./components";
+
 import "./App.css";
 
 const Game = () => {
   return (
     <div className="game">
       <div className="grid">
-        <div className="cell" style={{ width: "33.3%" }} />
-        <div className="cell" style={{ width: "33.3%" }} />
-        <div className="cell" style={{ width: "33.3%" }} />
+        <Cell />
+        <Cell />
+        <Cell />
 
-        <div className="cell" style={{ width: "33.3%" }} />
-        <div className="cell" style={{ width: "33.3%" }} />
-        <div className="cell" style={{ width: "33.3%" }} />
+        <Cell />
+        <Cell />
+        <Cell />
 
-        <div className="cell" style={{ width: "33.3%" }} />
-        <div className="cell" style={{ width: "33.3%" }} />
-        <div className="cell" style={{ width: "33.3%" }} />
+        <Cell />
+        <Cell />
+        <Cell />
       </div>
-      <div className="message">Game Message Here...</div>
-      <div className="button">
-        <button>Start Game</button>
-      </div>
+      <Footer />
     </div>
   );
 };
