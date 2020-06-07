@@ -1,6 +1,6 @@
 import React from "react";
 
-const Cell = () => {
-  return <div className="cell" style={{ width: "33.3%" }} />;
+const Cell = ({ width }) => {
+  return <div className="cell" style={{ width: `${width}%` }} />;
 };
 export default Cell;

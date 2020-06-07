@@ -1,12 +1,23 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import Game from "./App";
+import Game from "./Game";
 import * as serviceWorker from "./serviceWorker";
 
 ReactDOM.render(
   <React.StrictMode>
-    <Game />
+    <Game
+      //grid 大小
+      gridSize={5}
+      //挑战大小
+      challengeSize={6}
+      //挑战时间
+      challengeSeconds={3}
+      //游戏时间
+      playSeconds={10}
+      //最大容错尝试
+      maxWrongAttempts={3}
+    />
   </React.StrictMode>,
   document.getElementById("root")
 );
